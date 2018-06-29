@@ -7,7 +7,7 @@ jenkinsmaster:
  ports:
   - "50000:50000"
 jenkinsnginx:
- image: nginx
+ build: ./nginx/.
  ports:
   - "80:80"
  links:
